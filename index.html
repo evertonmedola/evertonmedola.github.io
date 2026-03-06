@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everton Medola — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── TOP BAR ── -->
+  <header class="topbar">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="nav-link" href="#about" data-lang="pt">Sobre</a>
+      <a class="nav-link" href="#about" data-lang="en">About</a>
+      <a class="nav-link" href="#stack">Stack</a>
+      <a class="nav-link" href="#experience" data-lang="pt">Experiência</a>
+      <a class="nav-link" href="#experience" data-lang="en">Experience</a>
+      <a class="nav-link" href="#education" data-lang="pt">Formação</a>
+      <a class="nav-link" href="#education" data-lang="en">Education</a>
+      <a class="nav-link" href="#contact" data-lang="pt">Contato</a>
+      <a class="nav-link" href="#contact" data-lang="en">Contact</a>
+    </nav>
+
+    <div class="topbar-controls">
+      <!-- Language switcher -->
+      <div class="lang-switcher" role="group" aria-label="Idioma">
+        <button class="lang-btn active" data-lang-target="pt" aria-pressed="true">PT</button>
+        <button class="lang-btn" data-lang-target="en" aria-pressed="false">EN</button>
+      </div>
+      <!-- Theme toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon theme-icon--dark">☀️</span>
+        <span class="theme-icon theme-icon--light">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MAIN ── -->
+  <main>
+
+    <!-- HERO -->
+    <section class="section hero" id="hero">
+      <p class="eyebrow">// Portfolio — 2025</p>
+
+      <h1 class="hero-name" aria-label="Everton Medola">
+        <span class="typewriter" id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+      </h1>
+
+      <p class="hero-role" data-lang="pt">Engenheiro de Software · Integração de Sistemas</p>
+      <p class="hero-role" data-lang="en">Software Engineer · Systems Integration</p>
+
+      <p class="hero-location">
+        <span class="dot-pulse" aria-hidden="true"></span>
+        Assis Chateaubriand, PR — Brasil
+      </p>
+
+      <div class="status-badge">
+        <span class="dot-live" aria-hidden="true"></span>
+        <span data-lang="pt">Disponível para oportunidades</span>
+        <span data-lang="en">Open to opportunities</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section reveal" id="about">
+      <p class="sec-label">
+        <span data-lang="pt">01 — Sobre</span>
+        <span data-lang="en">01 — About</span>
+      </p>
+      <p class="bio" data-lang="pt">
+        Tenho <strong>19 anos</strong> e sou de <strong>Assis Chateaubriand, PR</strong>. Estudo
+        <strong>Engenharia de Software</strong> na FAG em Toledo e atuo como
+        <strong>Engenheiro de Integração</strong> na Iota.Hub, onde conecto sistemas, manipulo dados
+        e automatizo fluxos entre ERPs e e-commerces. Movido por curiosidade e comprometido com a
+        qualidade do que construo.
+      </p>
+      <p class="bio" data-lang="en">
+        I'm <strong>19 years old</strong>, from <strong>Assis Chateaubriand, PR, Brazil</strong>.
+        I study <strong>Software Engineering</strong> at FAG in Toledo and work as an
+        <strong>Integration Engineer</strong> at Iota.Hub, where I connect systems, manipulate data
+        and automate flows between ERPs and e-commerce platforms. Driven by curiosity and committed
+        to the quality of what I build.
+      </p>
+    </section>
+
+    <!-- STACK -->
+    <section class="section reveal" id="stack">
+      <p class="sec-label">02 — Stack</p>
+      <div class="stack-grid">
+
+        <div class="stack-card">
+          <div class="stack-icon">⚡</div>
+          <div class="stack-name">JavaScript</div>
+          <div class="stack-desc" data-lang="pt">Linguagem principal</div>
+          <div class="stack-desc" data-lang="en">Primary language</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">🪺</div>
+          <div class="stack-name">NestJS</div>
+          <div class="stack-desc" data-lang="pt">Framework back-end</div>
+          <div class="stack-desc" data-lang="en">Back-end framework</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">☕</div>
+          <div class="stack-name">Java</div>
+          <div class="stack-desc" data-lang="pt">Linguagem</div>
+          <div class="stack-desc" data-lang="en">Language</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">🐍</div>
+          <div class="stack-name">Python</div>
+          <div class="stack-desc" data-lang="pt">Scripting & automação</div>
+          <div class="stack-desc" data-lang="en">Scripting & automation</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">🗄️</div>
+          <div class="stack-name">SQL</div>
+          <div class="stack-desc" data-lang="pt">Banco de dados</div>
+          <div class="stack-desc" data-lang="en">Databases</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">🔗</div>
+          <div class="stack-name">REST APIs</div>
+          <div class="stack-desc" data-lang="pt">Integração de sistemas</div>
+          <div class="stack-desc" data-lang="en">Systems integration</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section reveal" id="experience">
+      <p class="sec-label">
+        <span data-lang="pt">03 — Experiência</span>
+        <span data-lang="en">03 — Experience</span>
+      </p>
+
+      <article class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-company">Hype<span class="accent"> Moda Masculina</span></h2>
+            <p class="exp-role" data-lang="pt">Consultor de vendas</p>
+            <p class="exp-role" data-lang="en">Sales Consultant</p>
+          </div>
+          <span class="exp-period">
+            <span data-lang="pt">2024 set</span><span data-lang="en">2024 sep</span> — <span data-lang="pt">2024
+              dez</span><span data-lang="en">2024 dec</span>
+          </span>
+        </div>
+
+        <p class="exp-desc" data-lang="pt">
+          Especialista em transformar o ato da compra em uma experiência de consultoria de imagem. Utilizo a comunicação
+          para traduzir as tendências do mercado para o estilo individual de cada cliente. Através de uma gestão
+          organizada de pós-venda e do uso criativo de técnicas de visual merchandising e composição de looks, foco na
+          fidelização e na elevação da autoestima do público masculino.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          Specialist in transforming the act of shopping into a personalized image consulting experience. I use my
+          communication skills to translate market trends into each client's individual style. Through organized
+          after-sales management and the creative use of visual merchandising and styling, I focus on building customer
+          loyalty and enhancing the modern man's confidence.
+        </p>
+
+        <div class="exp-tags">
+          <span class="tag"><span data-lang="pt">Comunicação assertiva</span><span data-lang="en">Assertive
+              communication</span></span>
+          <span class="tag"><span data-lang="pt">Dores do mercado</span><span data-lang="en">Market pain
+              points</span></span>
+          <span class="tag"><span data-lang="pt">Organização</span><span data-lang="en">Organizational
+              skills</span></span>
+          <span class="tag"><span data-lang="pt">Criatividade</span><span data-lang="en">Creative thinking</span></span>
+          <span class="tag"><span data-lang="pt">Vendas</span><span data-lang="en">Sales</span></span>
+        </div>
+      </article>
+
+      <article class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-company">Iota<span class="accent">.</span>Hub</h2>
+            <p class="exp-role" data-lang="pt">Engenheiro de Integração</p>
+            <p class="exp-role" data-lang="en">Integration Engineer</p>
+          </div>
+          <span class="exp-period">
+            2025 jan — <span data-lang="pt">presente</span><span data-lang="en">present</span>
+          </span>
+        </div>
+
+        <p class="exp-desc" data-lang="pt">
+          Atuo na integração de sistemas, conectando plataformas de e-commerce a ERPs através de
+          APIs REST. Desenvolvo scripts de manipulação e transformação de dados, gerencio bancos
+          de dados relacionais e automatizo fluxos de informação entre diferentes sistemas
+          empresariais.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          Working on systems integration, connecting e-commerce platforms to ERPs through REST APIs.
+          I develop data manipulation and transformation scripts, manage relational databases and
+          automate information flows between different business systems.
+        </p>
+
+        <div class="exp-tags">
+          <span class="tag">REST APIs</span>
+          <span class="tag">ERP</span>
+          <span class="tag">E-commerce</span>
+          <span class="tag">SQL</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag" data-lang="pt">Manipulação de dados</span>
+          <span class="tag" data-lang="en">Data manipulation</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section reveal" id="education">
+      <p class="sec-label">
+        <span data-lang="pt">04 — Formação</span>
+        <span data-lang="en">04 — Education</span>
+      </p>
+
+      <div class="edu-card">
+        <span class="edu-year">2024 →</span>
+        <div>
+          <h3 class="edu-course" data-lang="pt">Engenharia de Software</h3>
+          <h3 class="edu-course" data-lang="en">Software Engineering</h3>
+          <p class="edu-school">FAG — Faculdade Assis Gurgacz · Toledo, PR</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section reveal" id="contact">
+      <p class="sec-label">
+        <span data-lang="pt">05 — Contato</span>
+        <span data-lang="en">05 — Contact</span>
+      </p>
+
+      <div class="contact-grid">
+
+        <button class="contact-card" id="copyEmailBtn" aria-label="Copiar email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">evertonmedola87@gmail.com</p>
+            <p class="contact-hint" data-lang="pt" id="emailHint">Clique para copiar</p>
+            <p class="contact-hint" data-lang="en" id="emailHintEn">Click to copy</p>
+          </div>
+        </button>
+
+        <a class="contact-card" href="https://github.com/evertonmedola" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">evertonmedola</p>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://www.instagram.com/evertonmedola/" target="_blank"
+          rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+          <div>
+            <p class="contact-label">Instagram</p>
+            <p class="contact-value">@evertonmedola</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <span>© 2025 Everton Medola</span>
+    <span class="footer-stack" data-lang="pt">Feito com HTML · CSS · JS</span>
+    <span class="footer-stack" data-lang="en">Built with HTML · CSS · JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
