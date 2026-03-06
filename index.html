@@ -5,6 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Everton Medola — Portfolio</title>
+
+  <!-- ── SEO ── -->
+  <meta name="description"
+    content="Portfólio de Everton Medola — Engenheiro de Software e Integração de Sistemas. JavaScript, NestJS, Java, Python, SQL." />
+  <meta name="keywords"
+    content="Everton Medola, Engenheiro de Software, Integração de Sistemas, NestJS, JavaScript, Portfolio" />
+  <meta name="author" content="Everton Medola" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ── OPEN GRAPH (WhatsApp, LinkedIn, Facebook) ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://evertonmedola.github.io/" />
+  <meta property="og:title" content="Everton Medola — Engenheiro de Software" />
+  <meta property="og:description"
+    content="Engenheiro de Integração de Sistemas. JavaScript, NestJS, Java, Python, SQL." />
+  <meta property="og:image" content="https://evertonmedola.github.io/foto.jpeg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- ── TWITTER CARD ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Everton Medola — Engenheiro de Software" />
+  <meta name="twitter:description"
+    content="Engenheiro de Integração de Sistemas. JavaScript, NestJS, Java, Python, SQL." />
+  <meta name="twitter:image" content="https://evertonmedola.github.io/foto.jpeg" />
+
+  <!-- ── THEME COLOR (barra do navegador mobile) ── -->
+  <meta name="theme-color" content="#080808" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -48,24 +76,36 @@
 
     <!-- HERO -->
     <section class="section hero" id="hero">
-      <p class="eyebrow">// Portfolio — 2025</p>
+      <div class="hero-content">
 
-      <h1 class="hero-name" aria-label="Everton Medola">
-        <span class="typewriter" id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
-      </h1>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-frame">
+            <img src="foto.jpeg" alt="Foto de Everton Medola" class="hero-photo" loading="eager" />
+          </div>
+        </div>
+        <div class="hero-text">
+          <p class="eyebrow">// Portfolio — 2025</p>
 
-      <p class="hero-role" data-lang="pt">Engenheiro de Software · Integração de Sistemas</p>
-      <p class="hero-role" data-lang="en">Software Engineer · Systems Integration</p>
+          <h1 class="hero-name" aria-label="Everton Medola">
+            <span class="typewriter" id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+          </h1>
 
-      <p class="hero-location">
-        <span class="dot-pulse" aria-hidden="true"></span>
-        Assis Chateaubriand, PR — Brasil
-      </p>
+          <p class="hero-role" data-lang="pt">Engenheiro de Software · Integração de Sistemas</p>
+          <p class="hero-role" data-lang="en">Software Engineer · Systems Integration</p>
 
-      <div class="status-badge">
-        <span class="dot-live" aria-hidden="true"></span>
-        <span data-lang="pt">Disponível para oportunidades</span>
-        <span data-lang="en">Open to opportunities</span>
+          <p class="hero-location">
+            <span class="dot-pulse" aria-hidden="true"></span>
+            Assis Chateaubriand, PR — Brasil
+          </p>
+
+          <div class="status-badge">
+            <span class="dot-live" aria-hidden="true"></span>
+            <span data-lang="pt">Disponível para oportunidades</span>
+            <span data-lang="en">Open to opportunities</span>
+          </div>
+        </div>
+
+
       </div>
     </section>
 
@@ -77,17 +117,24 @@
       </p>
       <p class="bio" data-lang="pt">
         <strong>Engenheiro de Software</strong> em formação pela FAG e <strong>Engenheiro de Integração</strong> na
-        Iota.Hub. Especializado em orquestrar ecossistemas digitais, transformo a complexidade da comunicação entre
-        <strong>ERPs e e-commerces</strong> em fluxos de dados eficientes e <strong>automatizados</strong>. Sou movido
-        pelo desafio de construir pontes tecnológicas que <strong>escalam negócios</strong>, unindo rigor técnico a uma
-        curiosidade constante pelo que há de novo no desenvolvimento de software.
+        Iota.Hub.
+        Trabalho com <strong>integrações</strong> entre <strong>ERPs e e-commerces</strong>, desenvolvendo soluções
+        baseadas
+        em
+        <strong>APIs</strong> para garantir a <strong>comunicação e o fluxo de dados entre sistemas</strong>.
+        Tenho interesse em <strong>resolver problemas reais com tecnologia</strong> e estou sempre buscando aprender
+        mais
+        sobre <strong>desenvolvimento de software</strong>, <strong>integrações</strong> e <strong>arquitetura de
+          sistemas</strong>.
       </p>
       <p class="bio" data-lang="en">
-        <strong>Software Engineering</strong> student and <strong>Integration Engineer</strong> at Iota.Hub. Specialized
-        in orchestrating digital ecosystems, I streamline complex communications between <strong>ERPs and
-          e-commerce</strong> platforms through <strong>automated</strong>, high-efficiency data flows. I am passionate
-        about building the technological bridges that <strong>scale businesses</strong>, blending technical discipline
-        with a constant drive to explore the cutting edge of software development.
+        <strong>Software Engineer</strong> in training at FAG and <strong>Integration Engineer</strong> at Iota.Hub.
+        I work with <strong>integrations between ERPs and e-commerce platforms</strong>, developing solutions based on
+        <strong>APIs</strong> to ensure <strong>communication and data flow between systems</strong>.
+        I am interested in <strong>solving real-world problems with technology</strong> and I am always looking to learn
+        more
+        about <strong>software development</strong>, <strong>system integrations</strong>, and <strong>systems
+          architecture</strong>.
       </p>
     </section>
 
@@ -152,12 +199,12 @@
         <div class="exp-header">
           <div>
             <h2 class="exp-company">Hype<span class="accent"> Moda Masculina</span></h2>
-            <p class="exp-role" data-lang="pt">Consultor de vendas</p>
+            <p class="exp-role" data-lang="pt">Consultor de Vendas</p>
             <p class="exp-role" data-lang="en">Sales Consultant</p>
           </div>
           <span class="exp-period">
-            <span data-lang="pt">2024 set</span><span data-lang="en">2024 sep</span> — <span data-lang="pt">2024
-              dez</span><span data-lang="en">2024 dec</span>
+            <span data-lang="pt">2024 set</span><span data-lang="en">2024 sep</span> —
+            <span data-lang="pt">2024 dez</span><span data-lang="en">2024 dec</span>
           </span>
         </div>
 
@@ -186,7 +233,7 @@
         </div>
       </article>
 
-      <article class="exp-card">
+      <article class="exp-card" style="margin-top: 12px;">
         <div class="exp-header">
           <div>
             <h2 class="exp-company">Iota<span class="accent">.</span>Hub</h2>
@@ -200,13 +247,12 @@
 
         <p class="exp-desc" data-lang="pt">
           Atuo na integração de sistemas, conectando plataformas de e-commerce a ERPs através de
-          APIs REST. Desenvolvo scripts de manipulação e transformação de dados, gerencio bancos
-          de dados relacionais e automatizo fluxos de informação entre diferentes sistemas
-          empresariais.
+          APIs REST. Desenvolvo scripts de manipulação e transformação de dados e automatizo fluxos de informação entre
+          diferentes sistemas empresariais.
         </p>
         <p class="exp-desc" data-lang="en">
           Working on systems integration, connecting e-commerce platforms to ERPs through REST APIs.
-          I develop data manipulation and transformation scripts, manage relational databases and
+          I develop data manipulation and transformation scripts and
           automate information flows between different business systems.
         </p>
 
