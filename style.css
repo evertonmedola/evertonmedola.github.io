@@ -291,7 +291,7 @@ main {
 }
 
 .hero-photo-frame:hover::before {
-  transform: translate(14px, 14px);
+  transform: translate(10px, 10px);
 }
 
 .hero-photo {
@@ -759,21 +759,23 @@ section {
     padding: 24px 22px;
   }
 
+  .hero-name {
+    font-size: clamp(32px, 5vw, 56px);
+  }
+
   .hero-content {
     flex-direction: column;
+    align-items: center;
     gap: 28px;
   }
 
   .hero-photo-wrap {
-    flex-shrink: 0;
-    width: 220px;
-    /* mesmo valor do frame */
+    width: 160px;
   }
 
   .hero-photo-frame {
-    position: relative;
-    width: 220px;
-    height: 270px;
+    width: 160px;
+    height: 200px;
   }
 
 }
