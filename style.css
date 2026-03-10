@@ -275,8 +275,8 @@ main {
 
 .hero-photo-frame {
   position: relative;
-  width: 260px;
-  height: 300px;
+  width: 160px;
+  height: 200px;
 }
 
 /* Accent border offset */
@@ -285,7 +285,7 @@ main {
   position: absolute;
   inset: 0;
   border: 2px solid var(--accent);
-  transform: translate(10px, 10px);
+  transform: translate(6px, 6px);
   z-index: 0;
   transition: transform 0.3s ease;
 }
@@ -297,8 +297,8 @@ main {
 .hero-photo {
   position: relative;
   z-index: 1;
-  width: 260px;
-  height: 300px;
+  width: 160px;
+  height: 200px;
   object-fit: cover;
   object-position: center top;
   display: block;
