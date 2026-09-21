@@ -75,18 +75,21 @@ body::before {
   transition: opacity 0.4s;
 }
 
-/* ── i18n ── */
-[data-lang] {
-  display: none;
-}
-
-[data-theme] .lang-pt [data-lang="pt"],
-[data-theme] .lang-en [data-lang="en"] {
+/* ── i18n ──
+   PT visível por padrão via CSS puro (sem esperar o JS rodar).
+   body.lang-en (aplicado por js/script.js) troca para EN. */
+[data-lang="pt"] {
   display: revert;
 }
 
-/* Simple approach: body carries the active lang class */
-body.lang-pt [data-lang="pt"],
+[data-lang="en"] {
+  display: none;
+}
+
+body.lang-en [data-lang="pt"] {
+  display: none;
+}
+
 body.lang-en [data-lang="en"] {
   display: revert;
 }
