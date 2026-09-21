@@ -18,8 +18,15 @@
   const cursor = document.querySelector('.cursor');
   if (!el) return;
 
-  const lines = ['Everton\nMedola'];
   const full = 'Everton\nMedola';
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    el.innerHTML = full.replace('\n', '<br>');
+    if (cursor) cursor.style.display = 'none';
+    return;
+  }
+
   let index = 0;
   let output = '';
   let done = false;
