@@ -297,6 +297,49 @@
               verification</span></span>
         </div>
       </article>
+
+      <article class="exp-card" style="margin-top: 12px;">
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-company">Flight Price <span class="accent">Tracker</span></h2>
+          </div>
+          <a class="project-link" href="https://github.com/evertonmedola/flight-price-tracker" target="_blank"
+            rel="noopener noreferrer">
+            <span data-lang="pt">Repositório</span><span data-lang="en">Repository</span>
+          </a>
+        </div>
+
+        <p class="exp-desc" data-lang="pt">
+          <strong>Problema:</strong> Acompanhar preço de passagem aérea manualmente é repetitivo, e a queda de preço
+          passa despercebida.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          <strong>Problem:</strong> Manually tracking flight prices is repetitive, and price drops go unnoticed.
+        </p>
+
+        <p class="exp-desc" data-lang="pt">
+          <strong>Resultado:</strong> Robô que roda diariamente via GitHub Actions, sem servidor próprio. Monitora
+          rotas configuráveis em YAML e alerta por e-mail quando o preço cai abaixo do valor-alvo, com histórico
+          versionado em SQLite. Construído com TDD desde o planejamento, com spec e plano aprovados antes do código:
+          98 testes, 96% de cobertura, ruff e mypy --strict em CI. A transação é atômica com rollback; se o envio de
+          e-mail falha, nada é gravado no banco.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          <strong>Result:</strong> A bot that runs daily via GitHub Actions, with no server of its own. It monitors
+          YAML-configured routes and emails an alert when the price drops below target, with price history
+          versioned in SQLite. Built test-first from a written spec and plan: 98 tests, 96% coverage, ruff and mypy
+          --strict in CI. The transaction is atomic with rollback; if the email fails, nothing gets written to the
+          database.
+        </p>
+
+        <div class="exp-tags">
+          <span class="tag">Python 3.12</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">SerpApi</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">smtplib</span>
+        </div>
+      </article>
     </section>
 
     <!-- EXPERIENCE -->
