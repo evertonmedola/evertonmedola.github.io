@@ -95,6 +95,31 @@ body.lang-en [data-lang="en"] {
 }
 
 /* ═══════════════════════════
+   SKIP LINK
+   Off-screen (not display:none, so it stays focusable),
+   revealed on keyboard focus.
+═══════════════════════════ */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 8px;
+  z-index: 1000;
+  background: var(--accent);
+  color: #000;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+/* ═══════════════════════════
    TOP BAR
 ═══════════════════════════ */
 .topbar {
@@ -753,6 +778,12 @@ main {
 
 .footer-stack {
   color: var(--border-hover);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-stack:hover {
+  color: var(--accent);
 }
 
 section {
