@@ -196,9 +196,9 @@
 
         <div class="stack-card">
           <div class="stack-icon">🗄️</div>
-          <div class="stack-name">SQL</div>
-          <div class="stack-desc" data-lang="pt">Banco de dados</div>
-          <div class="stack-desc" data-lang="en">Databases</div>
+          <div class="stack-name">PostgreSQL</div>
+          <div class="stack-desc" data-lang="pt">Banco de dados relacional</div>
+          <div class="stack-desc" data-lang="en">Relational database</div>
         </div>
 
         <div class="stack-card">
@@ -206,6 +206,27 @@
           <div class="stack-name">REST APIs</div>
           <div class="stack-desc" data-lang="pt">Integração de sistemas</div>
           <div class="stack-desc" data-lang="en">Systems integration</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">☁️</div>
+          <div class="stack-name">AWS</div>
+          <div class="stack-desc" data-lang="pt">ECS Fargate · RDS · ALB</div>
+          <div class="stack-desc" data-lang="en">ECS Fargate · RDS · ALB</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">🏗️</div>
+          <div class="stack-name">Terraform</div>
+          <div class="stack-desc" data-lang="pt">Infraestrutura como código</div>
+          <div class="stack-desc" data-lang="en">Infrastructure as code</div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-icon">⚙️</div>
+          <div class="stack-name">GitHub Actions</div>
+          <div class="stack-desc" data-lang="pt">CI/CD</div>
+          <div class="stack-desc" data-lang="en">CI/CD</div>
         </div>
 
       </div>
@@ -221,39 +242,43 @@
       <article class="exp-card">
         <div class="exp-header">
           <div>
-            <h2 class="exp-company">AUDTECH</h2>
+            <h2 class="exp-company">Financial Control <span class="accent">API</span></h2>
           </div>
-          <a class="project-link" href="https://github.com/evertonmedola/AUDTECH" target="_blank"
+          <a class="project-link" href="https://github.com/evertonmedola/financial-control-api" target="_blank"
             rel="noopener noreferrer">
             <span data-lang="pt">Repositório</span><span data-lang="en">Repository</span>
           </a>
         </div>
 
         <p class="exp-desc" data-lang="pt">
-          <strong>Problema:</strong> Empresas que fazem auditorias (ANVISA, ISO 9001, ISO 22000, etc.) gerenciam
-          checklists, evidências e planos de ação de forma dispersa, sem um sistema central com controle de acesso
-          por empresa.
+          <strong>Problema:</strong> Controle financeiro pessoal em planilha não escala e não impõe nenhuma
+          disciplina de modelagem.
         </p>
         <p class="exp-desc" data-lang="en">
-          <strong>Problem:</strong> Companies running audits (ANVISA, ISO 9001, ISO 22000, etc.) manage checklists,
-          evidence, and action plans in a scattered way, with no central system or per-company access control.
+          <strong>Problem:</strong> Personal finance tracked in spreadsheets doesn't scale and enforces no data
+          modeling discipline.
         </p>
 
         <p class="exp-desc" data-lang="pt">
-          <strong>Resultado:</strong> Sistema completo com perfil SUPERADMIN, gestão multi-empresa, templates de
-          checklist globais reutilizáveis, upload de evidências (Cloudinary) e módulo de plano de ação.
+          <strong>Resultado:</strong> API com seis domínios completos (autenticação, contas, categorias,
+          transações/transferências, orçamentos e relatórios), implantada na AWS com Terraform: VPC em duas zonas de
+          disponibilidade, RDS privado, ALB e ECS Fargate. Deploy automatizado por GitHub Actions com OIDC, sem
+          chaves de longa duração armazenadas. Repositório público, incluindo o histórico de decisões técnicas do
+          planejamento.
         </p>
         <p class="exp-desc" data-lang="en">
-          <strong>Result:</strong> Full system with a SUPERADMIN role, multi-company management, reusable global
-          checklist templates, evidence uploads (Cloudinary), and an action-plan module.
+          <strong>Result:</strong> API with six complete domains (auth, accounts, categories,
+          transactions/transfers, budgets, and reports), deployed to AWS with Terraform: a two-AZ VPC, private RDS,
+          ALB, and ECS Fargate. Deployment is automated through GitHub Actions with OIDC, with no long-lived keys
+          stored. Public repo, including the planning history and technical decisions.
         </p>
 
         <div class="exp-tags">
-          <span class="tag">Angular</span>
           <span class="tag">NestJS</span>
-          <span class="tag">TypeORM</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">Cloudinary</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">AWS (ECS Fargate)</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">GitHub Actions (OIDC)</span>
         </div>
       </article>
 
@@ -341,6 +366,45 @@
           <span class="tag">smtplib</span>
         </div>
       </article>
+
+      <article class="exp-card" style="margin-top: 12px;">
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-company">AUDTECH</h2>
+          </div>
+          <a class="project-link" href="https://github.com/evertonmedola/AUDTECH" target="_blank"
+            rel="noopener noreferrer">
+            <span data-lang="pt">Repositório</span><span data-lang="en">Repository</span>
+          </a>
+        </div>
+
+        <p class="exp-desc" data-lang="pt">
+          <strong>Problema:</strong> Empresas que fazem auditorias (ANVISA, ISO 9001, ISO 22000, etc.) gerenciam
+          checklists, evidências e planos de ação de forma dispersa, sem um sistema central com controle de acesso
+          por empresa.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          <strong>Problem:</strong> Companies running audits (ANVISA, ISO 9001, ISO 22000, etc.) manage checklists,
+          evidence, and action plans in a scattered way, with no central system or per-company access control.
+        </p>
+
+        <p class="exp-desc" data-lang="pt">
+          <strong>Resultado:</strong> Sistema completo com perfil SUPERADMIN, gestão multi-empresa, templates de
+          checklist globais reutilizáveis, upload de evidências (Cloudinary) e módulo de plano de ação.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          <strong>Result:</strong> Full system with a SUPERADMIN role, multi-company management, reusable global
+          checklist templates, evidence uploads (Cloudinary), and an action-plan module.
+        </p>
+
+        <div class="exp-tags">
+          <span class="tag">Angular</span>
+          <span class="tag">NestJS</span>
+          <span class="tag">TypeORM</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Cloudinary</span>
+        </div>
+      </article>
     </section>
 
     <!-- EXPERIENCE -->
@@ -351,6 +415,42 @@
       </p>
 
       <article class="exp-card">
+        <div class="exp-header">
+          <div>
+            <h2 class="exp-company">Iota<span class="accent">.</span>Hub</h2>
+            <p class="exp-role" data-lang="pt">Engenheiro de Integração</p>
+            <p class="exp-role" data-lang="en">Integration Engineer</p>
+          </div>
+          <span class="exp-period">
+            2025 jan — <span data-lang="pt">presente</span><span data-lang="en">present</span>
+          </span>
+        </div>
+
+        <p class="exp-desc" data-lang="pt">
+          Desenvolvi uma integração ERP-marketplace multidimensional (produtos, preço, estoque, pedidos, faturamento,
+          cancelamento e fulfillment) com lógica de retentativa automática, entregue em 60 dias. O cliente saiu de um
+          processo manual e escalou para cerca de 70 mil pedidos por mês, com ~58% de crescimento em GMV nos três
+          meses seguintes ao lançamento. Trabalho no time em Scrum.
+        </p>
+        <p class="exp-desc" data-lang="en">
+          Built a multidimensional ERP-marketplace integration (products, pricing, inventory, orders, invoicing,
+          cancellations, and fulfillment) with automatic retry logic, delivered in 60 days. The client moved off a
+          manual process and scaled to roughly 70k orders/month, with ~58% GMV growth in the three months after
+          launch. I work on the team in Scrum.
+        </p>
+
+        <div class="exp-tags">
+          <span class="tag">REST APIs</span>
+          <span class="tag">ERP</span>
+          <span class="tag">E-commerce</span>
+          <span class="tag">SQL</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag" data-lang="pt">Manipulação de dados</span>
+          <span class="tag" data-lang="en">Data manipulation</span>
+        </div>
+      </article>
+
+      <article class="exp-card" style="margin-top: 12px;">
         <div class="exp-header">
           <div>
             <h2 class="exp-company">Hype<span class="accent"> Moda Masculina</span></h2>
@@ -385,40 +485,6 @@
               skills</span></span>
           <span class="tag"><span data-lang="pt">Criatividade</span><span data-lang="en">Creative thinking</span></span>
           <span class="tag"><span data-lang="pt">Vendas</span><span data-lang="en">Sales</span></span>
-        </div>
-      </article>
-
-      <article class="exp-card" style="margin-top: 12px;">
-        <div class="exp-header">
-          <div>
-            <h2 class="exp-company">Iota<span class="accent">.</span>Hub</h2>
-            <p class="exp-role" data-lang="pt">Engenheiro de Integração</p>
-            <p class="exp-role" data-lang="en">Integration Engineer</p>
-          </div>
-          <span class="exp-period">
-            2025 jan — <span data-lang="pt">presente</span><span data-lang="en">present</span>
-          </span>
-        </div>
-
-        <p class="exp-desc" data-lang="pt">
-          Atuo na integração de sistemas, conectando plataformas de e-commerce a ERPs através de
-          APIs REST. Desenvolvo scripts de manipulação e transformação de dados e automatizo fluxos de informação entre
-          diferentes sistemas empresariais.
-        </p>
-        <p class="exp-desc" data-lang="en">
-          Working on systems integration, connecting e-commerce platforms to ERPs through REST APIs.
-          I develop data manipulation and transformation scripts and
-          automate information flows between different business systems.
-        </p>
-
-        <div class="exp-tags">
-          <span class="tag">REST APIs</span>
-          <span class="tag">ERP</span>
-          <span class="tag">E-commerce</span>
-          <span class="tag">SQL</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag" data-lang="pt">Manipulação de dados</span>
-          <span class="tag" data-lang="en">Data manipulation</span>
         </div>
       </article>
     </section>
