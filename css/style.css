@@ -564,8 +564,8 @@ main {
   font-family: 'DM Mono', monospace;
   font-size: 10px;
   letter-spacing: 0.1em;
-  color: var(--text-mid);
-  border: 1px solid var(--border);
+  color: var(--text);
+  border: 1px solid var(--border-hover);
   padding: 5px 12px;
   align-self: flex-start;
   white-space: nowrap;
@@ -590,7 +590,7 @@ main {
   letter-spacing: 0.1em;
   color: var(--text-mid);
   text-decoration: none;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-hover);
   padding: 5px 12px;
   align-self: flex-start;
   white-space: nowrap;
